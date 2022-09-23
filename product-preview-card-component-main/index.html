@@ -5,32 +5,46 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
   
   <title>Frontend Mentor | Product preview card component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+  <div class="container">
+    <div class="card">
 
-  Preview
+        <!--left-col is also top section for mobile view-->
+        <div class="left-col">
+            <img class="mobile-image" src="images\image-product-mobile.jpg" alt="Product-image">
+            <img class="desktop-image" src="images\image-product-desktop.jpg" alt="product-image">
+        </div>
 
-  Gabrielle Essence Eau De Parfum
+        <!--right-col also is bottom section for mobile view-->
 
-  A floral, solar and voluptuous interpretation composed by Olivier Polge, 
-  Perfumer-Creator for the House of CHANEL.
+        <div class="right-col">
+            <p class="perfume">Perfume</p>
 
-  $149.99
-  $169.99
+            <h1 class="mobile-h1">Gabrielle Essence<br>Eau De Parfum</h1>
 
-  Add to Cart
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+            <h1 class="desktop-h1">Gabrielle<br>Essence Eau<br>De Parfum</h1>
+
+            <p class="paragraph-mobile"> A floral, solar and voluptous<br>interpretation composed by
+               Olivier<br>Polge Perfumer-Creator for the house of<br>CHANEL.</p> 
+               
+            <p class="paragraph-desktop"> A floral, solar and voluptous<br>interpretation composed by<br>
+                Olivier Polge Perfumer-Creator<br>for the house of CHANEL.</p> 
+               
+            <div class="price-tag">
+              <p class="big-price">$149.99</p>
+              <p class="small-price">$169.99</p>
+            </div>
+
+            <button type="button" class="add-to-cart-button"><img class="cart-icon" src="images\icon-cart.svg" alt="Add- to-Cart-Button"> Add to Cart</button>
+        </div>
+
+    
+    </div>
   </div>
 </body>
 </html>

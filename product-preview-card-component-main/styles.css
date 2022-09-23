@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+:root {
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+    --button-hover: hsl(158, 36%, 20%); 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+background-color: var(--Cream);
+}
+
+
+
+/* Mobile display*/
+@media (max-width:375px) {
+    .desktop-image {
+        display:none;
+    }
+/*removes desktop style for paragraph text,
+ the same text had a <br> slightly diffrently on the desktop*/
+    .paragraph-desktop {
+        display: none;
+    }
+
+    .desktop-h1 {
+        display: none;
+
+    }
+
+    .container {
+        display: flex;   
+    }
+
+    .card {
+        background-color: var(--White);
+        margin: 20px 15px;
+        justify-content: center;
+        padding-bottom: 5px;
+        border-radius: 10px;
+        
+    }
+
+    .mobile-image {
+        max-width: 100%;
+        display:flex;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+    }
+
+    .right-col {
+        padding: 20px 23px;
+    }
+
+    .perfume {
+        font-family: "Montserrat", sans-serif;
+        font-size: 12px;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        text-align: left;
+        color: var(--Dark-grayish-blue);
+        margin-bottom: 20px;
+    }
+
+    .mobile-h1 {
+        font-family: "Fraunces", sans-serif;
+        font-size: 30px;
+        line-height: 30px;
+        margin-bottom: 15px;
+    
+    }
+
+    .paragraph-mobile {
+        font-family: "Montserrat", sans-serif;
+        font-size: 14px;
+        color: var(--Dark-grayish-blue);
+        line-height: 23px;
+    }
+
+    .price-tag {
+        display: flex;
+        margin-top: 15px;   
+    }
+
+    .big-price {
+        font-family: "Fraunces", sans-serif;
+        font-size: 30px;
+        padding: 0px 20px 15px 0px;
+        color: var(--Dark-cyan);
+    }
+
+    .small-price {
+        font-family: "Montserrat", sans-serif;
+        font-size: 13px;
+        text-decoration: line-through;
+        color: var(--Dark-grayish-blue);
+        padding-top: 10px;
+    }
+
+    .add-to-cart-button {
+        padding: 14px 95px;
+        font-size: 15px;
+        font-style: "Montserrat", sans-serif;
+        background-color: var(--Dark-cyan);
+        border: none;
+        color: var(--White);
+        font-weight: 700;
+        border-radius: 10px;
+    }
+
+    .add-to-cart-button:hover {
+        background-color: var(--button-hover);
+    }
+
+    .cart-icon {
+        padding-right: 5px;
+    }
+    
+}  
+
+
+
+/*Desktop Display*/
+@media (min-width: 376px) {
+    .mobile-image {
+        display: none;
+    }
+/* removes mobile text paragraph on desktop, 
+    the same text had a <br> slightly diffrently on the mobile*/
+    .paragraph-mobile {
+        display: none;
+    }
+
+    .mobile-h1 {
+        display: none;
+    }
+
+    .container {
+        justify-content: center;
+        display: flex;
+        max-height: 100vh;
+    }
+
+    .card {
+        background-color: var(--White);
+        display: flex;
+        margin: 170px 340px;
+        border-radius: 10px;
+    }
+
+    .desktop-image {
+        max-height: 100%;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+
+    .right-col {
+        padding: 35px 30px 0px 30px;
+        margin-right: -300px;
+    }
+
+    .perfume {
+        font-family: "Montserrat", sans-serif;
+        font-size: 12px;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        text-align: left;
+        color: var(--Dark-grayish-blue);
+        margin-bottom: 20px;
+    }
+
+    .desktop-h1 {
+        font-family: "Fraunces", sans-serif;
+        font-size: 32px;
+        line-height: 32px;
+        margin-bottom: 22px;
+    
+    }
+
+    .paragraph-desktop {
+        font-family: "Montserrat", sans-serif;
+        font-size: 14px;
+        color: var(--Dark-grayish-blue);
+        line-height: 23px;
+    }
+
+    .price-tag {
+        display: flex;
+        margin-top: 15px;   
+    }
+
+    .big-price {
+        font-family: "Fraunces", sans-serif;
+        font-size: 32px;
+        padding: 10px 20px 25px 0px;
+        color: var(--Dark-cyan);
+    }
+
+    .small-price {
+        font-family: "Montserrat", sans-serif;
+        font-size: 14px;
+        text-decoration: line-through;
+        color: var(--Dark-grayish-blue);
+        padding-top: 20px;
+    }
+    
+    .add-to-cart-button {
+        padding: 15px 70px;
+        font-size: 15px;
+        font-style: "Montserrat", sans-serif;
+        background-color: var(--Dark-cyan);
+        border: none;
+        color: var(--White);
+        font-weight: 700;
+        border-radius: 10px;
+        margin-top: 3px;
+    }
+
+    .add-to-cart-button:hover {
+        background-color: var(--button-hover);
+    }
+      
+    .cart-icon {
+        padding-right: 5px;
+    }
+}
+
