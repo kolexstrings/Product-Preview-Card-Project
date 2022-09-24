@@ -152,7 +152,7 @@ background-color: var(--Cream);
     .card {
         background-color: var(--White);
         display: flex;
-        margin: 170px 340px;
+        margin: 50px 200px;
         border-radius: 10px;
     }
 
@@ -179,7 +179,7 @@ background-color: var(--Cream);
 
     .desktop-h1 {
         font-family: "Fraunces", sans-serif;
-        font-size: 32px;
+        font-size: 30px;
         line-height: 32px;
         margin-bottom: 22px;
     
@@ -199,14 +199,14 @@ background-color: var(--Cream);
 
     .big-price {
         font-family: "Fraunces", sans-serif;
-        font-size: 32px;
+        font-size: 30px;
         padding: 10px 20px 25px 0px;
         color: var(--Dark-cyan);
     }
 
     .small-price {
         font-family: "Montserrat", sans-serif;
-        font-size: 14px;
+        font-size: 13px;
         text-decoration: line-through;
         color: var(--Dark-grayish-blue);
         padding-top: 20px;
@@ -233,3 +233,17 @@ background-color: var(--Cream);
     }
 }
 
+@media (min-width: 1440px) {
+    .card {
+        background-color: var(--White);
+        display: flex;
+        margin: 170px 340px;
+        border-radius: 10px;
+    }
+
+    .right-col {
+        padding: 35px 30px 0px 30px;
+        margin-right: -300px;
+    }
+
+}
