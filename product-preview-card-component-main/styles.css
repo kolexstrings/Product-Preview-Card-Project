@@ -233,11 +233,11 @@ background-color: var(--Cream);
     }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1200px) {
     .card {
         background-color: var(--White);
         display: flex;
-        margin: 170px 340px;
+        margin: 95px 200px;
         border-radius: 10px;
     }
 
